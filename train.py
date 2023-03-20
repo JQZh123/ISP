@@ -70,13 +70,13 @@ if __name__=='__main__':
     gan = GAN(gen,dis)
     x_train = []
     
-    train_file = glob.glob('') 
+    train_file = glob.glob('VOC-train') 
                  
     print len(train_file)
 
     x_val = []
     val_origin = []
-    val_file = glob.glob('')
+    val_file = glob.glob('VOC-val')
     j=0
     standard_size = (256,256,3)
     for f in val_file:
